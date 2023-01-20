@@ -76,3 +76,19 @@ themeButton.addEventListener('click', ()=>{
     localStorage.setItem('selected-theme', getCurrentTheme());
     localStorage.setItem('selected-icon', getCurrentIcon());
 })
+
+function sendMail(){
+    console.log("working")
+    
+    Email.send({
+        Host : "smtp.gmail.com",
+        Username : "bharatkumarmareedu@gmail.com",
+        Password : "eefgylwjuvdwnkoa",
+        To : "bharatkumarmareedu@gmail.com",
+        From : document.getElementById('emailForm').value,
+        Subject : `Message from ${document.getElementById('nameForm').value}`,
+        Body : document.getElementById('messageForm').value
+    }).then(
+      message => alert(message)
+    );
+}
