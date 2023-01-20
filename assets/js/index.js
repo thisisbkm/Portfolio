@@ -32,7 +32,7 @@ function toggleSkills(){
     if(itemClass.className === skillsOpen){
         itemClass.className = skillsClose;
     }else{
-        console.log(skillsContent);
+        // console.log(skillsContent);
         Array.from(skillsContent).forEach((val)=>{
             val.className = skillsClose;
         })
