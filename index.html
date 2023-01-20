@@ -26,20 +26,20 @@
                         </a>
                     </li>
                     <li class="nav_item">
-                        <a href="#education" class="nav_link">
-                            <i class="uil uil-book-alt nav_icon"></i> Education
-                        </a>
-                    </li>
-                    <li class="nav_item">
                         <a href="#skills" class="nav_link">
                             <i class="uil uil-file-info-alt nav_icon"></i> Skills
                         </a>
                     </li>
                     <li class="nav_item">
+                        <a href="#education" class="nav_link">
+                            <i class="uil uil-book-alt nav_icon"></i> Education
+                        </a>
+                    </li>
+                    <!-- <li class="nav_item">
                         <a href="#portfolio" class="nav_link">
                             <i class="uil uil-scenery nav_icon"></i> Portfolio
                         </a>
-                    </li>
+                    </li> -->
                     <li class="nav_item">
                         <a href="#contact" class="nav_link">
                             <i class="uil uil-message nav_icon"></i> Contact Me
@@ -50,6 +50,7 @@
                 <i class="uil uil-multiply nav_close  " id="nav-close"></i>
             </div>   
             <div class="nav_btns">
+                <i class="uil uil-moon change-theme" id="theme-button"></i>
                 <div class="nav_toggle" id="nav-toggle">
                     <i class="uil uil-apps"></i>
                 </div>
@@ -57,6 +58,7 @@
         </nav>
     </header>
     <main class="main">
+        <!-- home -->
         <section class="home section" id="home">
             <div class="home_container container grid">
                 <div class="home_content grid">
@@ -65,10 +67,7 @@
                             <i class="uil uil-linkedin-alt"></i>
                         </a>
                         <a href="https://www.instagram.com/thisisbkm/" target="_blank" class="home_social-icon">
-                            <i class="uil uil-instagram"></i>
-                        </a>
-                        <a href="https://twitter.com/thisisbkm" target="_blank" class="home_social-icon">
-                            <i class="uil uil-twitter"></i>
+                            <img src="./assets/imgs/leetcode.svg" alt="">
                         </a>
                         <a href="https://medium.com/@thisisbkm" target="_blank" class="home_social-icon">
                             <i class="uil uil-medium-m"></i>
@@ -112,7 +111,7 @@
                 </div>
             </div>
         </section>
-
+        <!-- about -->
         <section class="about section" id="about">
             <h2 class="section_title">About Me</h2>
             <span class="section_subtitle">My Introduction</span>
@@ -144,7 +143,7 @@
                 </div>
             </div>
         </section>
-
+        <!-- skills -->
         <section class="skills section" id="skills">
             <h2 class="section_title">Skills</h2>
             <span class="section_subtitle">My technical level</span>
@@ -240,7 +239,7 @@
                             <i class="uil uil-brackets-curly skills_icon"></i>
                             <div>
                                 <h1 class="skills_title">Programming Languages</h1>
-                                <span class="skills_subtitle"></span>
+                                <span class="skills_subtitle">Intermediate</span>
                             </div>
                             <i class="uil uil-angle-down skills_arrow"></i>
                         </div>
@@ -284,11 +283,136 @@
                             
                         </div>
                     </div>
-
                 </div>
             </div>
         </section>
+
+
+        <!-- Qualification -->
+        <section class="qualification_section" id="education">
+            <h2 class="section_title">Qualification</h2>
+            <span class="section_subtitle">My Personal Journey</span>
+    
+            <div class="qualification_container container">
+                <div class="qualification_tabs">
+                    <div class="qualification_button button--flex">
+                        <i class="uil uil-graduation-cap qualification_icon"></i>
+                        Education
+                    </div>
+                </div>
+    
+                <div class="qualification_sections">
+                    <div class="qualification_content">
+                        <div class="qualification_data">
+                            <div>
+                                <h3 class="qualification_title">Computer Science Engineering</h3>
+                                <span class="qualification_subtitle">Lovely Professional University</span>
+                                <div class="qualification_calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2020 - 2024
+                                </div>
+                            </div>
+    
+                            <div>
+                                <span class="qualification_rounder"></span>
+                                <span class="qualification_line"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+    
+            </div>
+        </section>
+
+        <!-- contact me -->
+        <section class="contact section" id="contact">
+            <h2 class="section_title">Contact Me</h2>
+            <span class="section_subtitle">Get in touch</span>
+            <div class="contact_container container grid">
+                <div>
+                    <div class="contact_information">
+                        <i class="uil uil-phone contact_icon"></i>
+                        <div>
+                            <h3 class="contact_title">Call Me</h3>
+                            <span class="contact_subtitle">+91-6300894905</span>
+                        </div>
+                    </div>
+                    <div class="contact_information">
+                        <i class="uil uil-envelope contact_icon"></i>
+                        <div>
+                            <h3 class="contact_title">Email</h3>
+                            <span class="contact_subtitle">bharatkumarmareedu@gmail.com</span>
+                        </div>
+                    </div>
+                    <div class="contact_information">
+                        <i class="uil uil-map-marker contact_icon"></i>
+                        <div>
+                            <h3 class="contact_title">Location</h3>
+                            <span class="contact_subtitle">Vijayawada - India</span>
+                        </div>
+                    </div>
+                </div>
+                <form action="" class="contact_form grid">
+                    <div class="contact_inputs grid">
+                        <div class="contact_content">
+                            <label for="" class="contact_label">Name</label>
+                            <input type="text" class="contact_input">
+                        </div>
+                        <div class="contact_content">
+                            <label for="" class="contact_label">Email</label>
+                            <input type="email" class="contact_input">
+                        </div>
+                        <div class="contact_content">
+                            <label for="" class="contact_label">Message</label>
+                            <textarea name="" id="" cols="0" rows="7" class="contact_input"></textarea>
+                        </div>
+                    </div>
+
+                    <div>
+                        <a href="#" class="button button--flex">
+                            Send Message
+                            <i class="uil uil-message button_icon"></i>
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </section>
     </main>
+
+    <footer class="footer">
+        <div class="footer_bg">
+            <div class="footer_container container grid">
+                <div>
+                    <h1 class="footer_title">Bharat Kumar</h1>
+                    <span class="footer_subtitle">Frontend Developer</span>
+                </div>
+                <ul class="footer_links">
+                    <li>
+                        <a href="#Skills" class="footer_link">Skills</a>
+                    </li>
+                    <li>
+                        <a href="#education" class="footer_link">Education</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="footer_link">Contact Me</a>
+                    </li>
+                    
+                </ul>
+                <div class="footer_socials">
+                    <a href="https://www.instagram.com/thisisbkm/" target="_blank">
+                        <i class="uil uil-instagram"></i>
+                    </a>
+                    <a href="https://twitter.com/thisisbkm" target="_blank">
+                        <i class="uil uil-twitter"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <a href="#home" class="scrollup" id="scroll-up">
+        <i class="uil uil-arrow-up scrollup_icon"></i>
+    </a>
 <script src="./assets/js/index.js"></script>
 </body>
 </html>
