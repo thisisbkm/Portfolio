@@ -77,18 +77,12 @@ themeButton.addEventListener('click', ()=>{
     localStorage.setItem('selected-icon', getCurrentIcon());
 })
 
-function sendMail(){
-    console.log("working")
-    
-    Email.send({
-        Host : "smtp.gmail.com",
-        Username : "bharatkumarmareedu@gmail.com",
-        Password : "eefgylwjuvdwnkoa",
-        To : "bharatkumarmareedu@gmail.com",
-        From : document.getElementById('emailForm').value,
-        Subject : `Message from ${document.getElementById('nameForm').value}`,
-        Body : document.getElementById('messageForm').value
-    }).then(
-      message => alert(message)
-    );
-}
+
+const changeClr = document.getElementById('change-color');
+
+changeClr.addEventListener('click',()=>{
+    let val = Math.floor(Math.random()*357);
+    // console.log(val);
+    document.documentElement.style.setProperty('--hue-color', val);
+});
+

@@ -45,7 +45,11 @@
                             <i class="uil uil-message nav_icon"></i> Contact Me
                         </a>
                     </li>
-                       
+                    <li class="nav_item">
+                        <a href="#" class="nav_link">
+                            <i class="uil uil-palette nav_icon" id="change-color"></i> Change Color
+                        </a>
+                    </li>
                 </ul>
                 <i class="uil uil-multiply nav_close  " id="nav-close"></i>
             </div>   
@@ -365,14 +369,14 @@
                         </div>
                         <div class="contact_content">
                             <label for="" class="contact_label">Message</label>
-                            <textarea name="" id="" cols="0" rows="7" class="contact_input" id="messageForm"></textarea>
+                            <textarea name="" cols="0" rows="7" class="contact_input" id="messageForm"></textarea>
                         </div>
                     </div>
 
                     <div>
-                        <a href="" onclick="sendMail()" class="button button--flex">
+                        <a onclick="sendMail()" class="button button--flex">
                             Send Message
-                            <!-- <input type="submit"> -->
+                            <!-- <input type="submit"> --> 
                             <i class="uil uil-message button_icon"></i>
                         </a>
                     </div>
@@ -417,7 +421,6 @@
     <a href="#home" class="scrollup" id="scroll-up">
         <i class="uil uil-arrow-up scrollup_icon"></i>
     </a>
-<script src="https://smtpjs.com/v3/smtp.js"></script>
 <script src="./assets/js/index.js"></script>
 </body>
 </html>
