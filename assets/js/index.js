@@ -80,9 +80,14 @@ themeButton.addEventListener('click', ()=>{
 
 const changeClr = document.getElementById('change-color');
 
+const hueVal = localStorage.getItem('hue-value');
+if(hueVal){
+    document.documentElement.style.setProperty('--hue-color', hueVal);
+}
 changeClr.addEventListener('click',()=>{
     let val = Math.floor(Math.random()*357);
     // console.log(val);
     document.documentElement.style.setProperty('--hue-color', val);
+    localStorage.setItem('hue-value', val);
 });
 
