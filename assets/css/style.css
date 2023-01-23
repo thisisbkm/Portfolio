@@ -217,6 +217,7 @@ img{max-width: 100%;height: auto;}
     font-size: var(--small-font-size);
     color: var(--title-color);
     font-weight: var(--font-medium);
+    cursor: pointer;
 }
 
 .nav_link:hover{
